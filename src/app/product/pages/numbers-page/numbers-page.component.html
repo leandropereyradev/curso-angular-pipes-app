@@ -1,1 +1,33 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes Numéricos" class="p-1">
+  <p>Pipes incluídos en Angular - Usualmente en el Common Module</p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas" subheader="number con dos decimales">
+      {{ totalSells | number : "1.2-2" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card
+      header="Ventas Brutas"
+      subheader="currency en euros basado en el ISO-4217"
+    >
+      <p>Dos decimales por defecto</p>
+      {{ totalSells | currency : "EUR" : "symbol-narrow" }}
+      <hr />
+      <p>Cuatro decimales por configuración</p>
+      {{ totalSells | currency : "EUR" : "symbol-narrow" : "1.4-4" }}
+    </p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card
+      header="Ganancia porcentual"
+      subheader="percent desde el número 0.4865"
+    >
+      {{ percent | percent : "1.2-2" }}
+    </p-card>
+  </div>
+</div>
