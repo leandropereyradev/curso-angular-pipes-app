@@ -10,6 +10,7 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 import { OrderComponent } from './pages/order/order.component';
 
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
+import { ToggleBooleanCasePipe } from './pipes/toogle-boolean-case.pipe';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ToggleCasePipe } from './pipes/toggle-case.pipe';
     UncommonPageComponent,
     OrderComponent,
     ToggleCasePipe,
+    ToggleBooleanCasePipe,
   ],
   imports: [CommonModule, ProductRoutingModule, PrimeNgModule],
 })
