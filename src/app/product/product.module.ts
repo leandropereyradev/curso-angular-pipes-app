@@ -11,15 +11,17 @@ import { OrderComponent } from './pages/order/order.component';
 
 import { ToggleCasePipe } from './pipes/toggle-case.pipe';
 import { ToggleBooleanCasePipe } from './pipes/toogle-boolean-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
 
 @NgModule({
   declarations: [
     BasicsPagesComponent,
+    CanFlyPipe,
     NumbersPageComponent,
-    UncommonPageComponent,
     OrderComponent,
-    ToggleCasePipe,
     ToggleBooleanCasePipe,
+    ToggleCasePipe,
+    UncommonPageComponent,
   ],
   imports: [CommonModule, ProductRoutingModule, PrimeNgModule],
 })
